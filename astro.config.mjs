@@ -3,11 +3,11 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://deine-domain.tld',
+  site: 'https://ki-beratung-v2-authority.netlify.app',
   trailingSlash: 'never',
 
   build: {
-      format: 'file'
+    format: 'file'
   },
 
   integrations: [sitemap()]
