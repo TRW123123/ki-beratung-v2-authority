@@ -4,7 +4,6 @@ import TOC from "../components/TOC.astro";
 import KeyTakeaways from "../components/KeyTakeaways.astro";
 import Callout from "../components/Callout.astro";
 import FAQMicrodata from "../components/FAQMicrodata.astro";
-import Placeholder from "../components/Placeholder.astro";
 
 const title =
     "KI Einführung im Unternehmen: Strategie, Roadmap & Governance (Leitfaden)";
@@ -181,10 +180,15 @@ const faqItems = [
                 Belegschaft.
             </p>
 
-            <Placeholder
-                title="Visual: Phasen-Timeline"
-                description="Timeline-Diagramm der 4 Phasen mit typischen Meilensteinen und Gates (Entscheidungspunkten)."
-            />
+            <div
+                class="my-12 rounded-xl overflow-hidden shadow-2xl border border-[var(--color-border)]"
+            >
+                <img
+                    src="/images/phasen_timeline.png"
+                    alt="Visual: Phasen-Timeline"
+                    class="w-full h-auto"
+                />
+            </div>
 
             <KeyTakeaways
                 items={[
@@ -277,10 +281,15 @@ const faqItems = [
                 Risiko.
             </p>
 
-            <Placeholder
-                title="Visual: Auswahlmatrix für Pilotprojekte"
-                description="Matrix: Machbarkeit (hoch/niedrig) vs. Business Impact (hoch/niedrig). Fokus auf 'Quick Wins' oben rechts."
-            />
+            <div
+                class="my-12 rounded-xl overflow-hidden shadow-2xl border border-[var(--color-border)]"
+            >
+                <img
+                    src="/images/pilot_matrix.png"
+                    alt="Visual: Auswahlmatrix für Pilotprojekte"
+                    class="w-full h-auto"
+                />
+            </div>
         </section>
 
         <section id="kontakt" class="contact-section">
