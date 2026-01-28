@@ -4,7 +4,6 @@ import TOC from "../components/TOC.astro";
 import KeyTakeaways from "../components/KeyTakeaways.astro";
 import Callout from "../components/Callout.astro";
 import FAQMicrodata from "../components/FAQMicrodata.astro";
-import Placeholder from "../components/Placeholder.astro";
 
 const title =
     "KI im Unternehmen: Analyse, Nutzen, Grenzen und Risiken (Leitfaden)";
@@ -96,10 +95,10 @@ const faqItems = [
                 <picture>
                     <source
                         media="(max-width: 768px)"
-                        srcset="/images/analysis_mobile_1769613760526.png"
+                        srcset="/images/analysis_mobile_v2.png"
                     />
                     <img
-                        src="/images/analysis_desktop_1769613600439.png"
+                        src="/images/analysis_desktop_v2.png"
                         alt="Vergleich: Deterministische IT vs. Probabilistische KI"
                         class="w-full h-auto"
                     />
@@ -207,10 +206,15 @@ const faqItems = [
                 </li>
             </ul>
 
-            <Placeholder
-                title="Visual: Wertschöpfungskette & KI-Potenziale"
-                description="Schematische Darstellung einer Wertschöpfungskette (Einkauf -> Produktion -> Vertrieb -> Service) mit markierten KI-Eingriffspunkten."
-            />
+            <div
+                class="my-12 rounded-xl overflow-hidden shadow-2xl border border-[var(--color-border)]"
+            >
+                <img
+                    src="/images/wertschoepfungskette.png"
+                    alt="Visual: Wertschöpfungskette & KI-Potenziale"
+                    class="w-full h-auto"
+                />
+            </div>
         </section>
 
         <!-- SECTION 4: Grenzen & Risiken -->
@@ -310,10 +314,15 @@ const faqItems = [
                 "Garbage In, Garbage Out" gilt bei KI potenziert.
             </p>
 
-            <Placeholder
-                title="Visual: Kosten-Nutzen-Matrix"
-                description="Matrix: Aufwand (y-Achse) vs. Nutzen (x-Achse). Positionierung von Standard-Automatisierung vs. Custom-KI."
-            />
+            <div
+                class="my-12 rounded-xl overflow-hidden shadow-2xl border border-[var(--color-border)]"
+            >
+                <img
+                    src="/images/roi_matrix.png"
+                    alt="Visual: Kosten-Nutzen-Matrix"
+                    class="w-full h-auto"
+                />
+            </div>
         </section>
 
         <section

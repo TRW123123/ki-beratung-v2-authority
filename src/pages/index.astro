@@ -1,7 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import KeyTakeaways from "../components/KeyTakeaways.astro";
-import Placeholder from "../components/Placeholder.astro";
 
 const title = "KI-Strategie und Einführung für den deutschen Mittelstand";
 const description =
@@ -75,10 +74,15 @@ const canonical = new URL(
                 einem verlässlichen Ordnungsrahmen für deren Einsatz.
             </p>
 
-            <Placeholder
-                title="Visual: Spannungsfeld Mittelstand"
-                description="Grafik: Spannungsfeld zwischen Innovationsdruck, Rechtssicherheit (DSGVO/AI Act) und operativer Stabilität."
-            />
+            <div
+                class="my-12 rounded-xl overflow-hidden shadow-2xl border border-[var(--color-border)]"
+            >
+                <img
+                    src="/images/spannungsfeld.png"
+                    alt="Grafik: Spannungsfeld Mittelstand"
+                    class="w-full h-auto"
+                />
+            </div>
         </section>
 
         <!-- SECTION: Trust Anchors & Methodik -->
@@ -190,7 +194,7 @@ const canonical = new URL(
             </p>
             <div style="margin-top: 2rem;">
                 <a
-                    href="https://cal.com/dein-link"
+                    href="https://cal.com/safak-tepecik/30min"
                     class="btn btn-primary"
                     style="background: white; color: var(--color-accent);"
                     >Gespräch vereinbaren</a
@@ -205,8 +209,8 @@ const canonical = new URL(
             </div>
             <div class="contact-details">
                 <span>Sitz: Deutschland</span>
-                <a href="mailto:kontakt@deine-domain.tld"
-                    >kontakt@deine-domain.tld</a
+                <a href="mailto:info@st-automatisierung.de"
+                    >info@st-automatisierung.de</a
                 >
             </div>
         </section>
