@@ -6,7 +6,10 @@ import Placeholder from "../components/Placeholder.astro";
 const title = "KI-Strategie und Einführung für den deutschen Mittelstand";
 const description =
     "Beratung für Unternehmen von 25-250 Mitarbeitenden. Realistische Einschätzung, rechtssichere Einführung und Prozesssicherheit ohne Hype.";
-const canonical = new URL(Astro.url.pathname, Astro.site);
+const canonical = new URL(
+    Astro.url.pathname.replace(/\.html$/, ""),
+    Astro.site,
+);
 ---
 
 <BaseLayout title={title} description={description} canonical={canonical}>

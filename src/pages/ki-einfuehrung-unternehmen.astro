@@ -10,7 +10,10 @@ const title =
     "KI Einführung im Unternehmen: Strategie, Roadmap & Governance (Leitfaden)";
 const description =
     "Schritt-für-Schritt Vorgehensmodell für den Mittelstand. Von der Daten-Bereitschaft über den Pilot bis zur Skalierung. Risikoarm und prozessorientiert.";
-const canonical = new URL(Astro.url.pathname, Astro.site);
+const canonical = new URL(
+    Astro.url.pathname.replace(/\.html$/, ""),
+    Astro.site,
+);
 
 const tocItems = [
     { id: "mindset", label: "Mindset: Change statt IT" },
