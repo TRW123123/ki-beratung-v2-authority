@@ -83,10 +83,27 @@ const faqItems = [
                 arbeiten?").
             </p>
 
-            <Placeholder
-                title="Visual: Die KI-Einführungs-Pyramide"
-                description="Pyramide: Basis = Daten/Infra, Mitte = Prozesse/Governance, Spitze = KI-Tools. Zeigt: Tools sind nur die Spitze des Eisbergs."
-            />
+            <div
+                class="my-12 rounded-xl overflow-hidden shadow-2xl border border-[var(--color-border)]"
+            >
+                <picture>
+                    <source
+                        media="(max-width: 768px)"
+                        srcset="/images/blueprint_mobile_1769614059159.png"
+                    />
+                    <img
+                        src="/images/blueprint_desktop_1769613939400.png"
+                        alt="Die KI-Einführungs-Pyramide: Daten > Prozesse > Tools"
+                        class="w-full h-auto"
+                    />
+                </picture>
+                <p
+                    class="text-sm text-center text-gray-500 mt-2 p-2 bg-[var(--color-surface-subtle)]"
+                >
+                    Strategische Hierarchie: Solide Infrastruktur und Governance
+                    sind das Fundament für erfolgreiche KI-Tools.
+                </p>
+            </div>
         </section>
 
         <!-- SECTION 2: Fehler -->

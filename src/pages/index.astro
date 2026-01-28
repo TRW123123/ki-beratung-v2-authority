@@ -11,8 +11,24 @@ const canonical = "https://deine-domain.tld/";
 
 <BaseLayout title={title} description={description} canonical={canonical}>
     <!-- HERO: Positionierung -->
-    <section class="hero">
-        <div class="container">
+    <section class="hero relative overflow-hidden">
+        <!-- Responsive Tech Background -->
+        <div class="absolute inset-0 z-0 opacity-40">
+            <picture>
+                <source
+                    media="(max-width: 768px)"
+                    srcset="/images/hero_mobile_1769613427118.png"
+                />
+                <img
+                    src="/images/hero_desktop_1769613342869.png"
+                    alt="Abstract Tech Network Background"
+                    class="w-full h-full object-cover"
+                />
+            </picture>
+        </div>
+
+        <!-- Content Overlay -->
+        <div class="container relative z-10">
             <h1>KI-Strategie und Einführung für den deutschen Mittelstand</h1>
             <p class="hero-subhead">
                 Wir unterstützen Unternehmen (25 bis 250 Mitarbeitende) dabei,

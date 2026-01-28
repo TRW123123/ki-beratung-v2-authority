@@ -87,10 +87,28 @@ const faqItems = [
                 natürlicher Sprache und visuellen Mustern.
             </p>
 
-            <Placeholder
-                title="Visual: KI vs. Regelbasierte Systeme"
-                description="Vergleichsdiagramm: Deterministische Systeme (Starr, 100% genau, strukturiert) vs. Probabilistische Systeme (Flexibel, statistische Varianz, unstrukturiert)."
-            />
+            <div
+                class="my-12 rounded-xl overflow-hidden shadow-2xl border border-[var(--color-border)]"
+            >
+                <picture>
+                    <source
+                        media="(max-width: 768px)"
+                        srcset="/images/analysis_mobile_1769613760526.png"
+                    />
+                    <img
+                        src="/images/analysis_desktop_1769613600439.png"
+                        alt="Vergleich: Deterministische IT vs. Probabilistische KI"
+                        class="w-full h-auto"
+                    />
+                </picture>
+                <p
+                    class="text-sm text-center text-gray-500 mt-2 p-2 bg-[var(--color-surface-subtle)]"
+                >
+                    Visualisierung: Der Paradigmenwechsel von starrer
+                    Infrastruktur (links/unten) zu adaptiver Intelligenz
+                    (rechts/oben).
+                </p>
+            </div>
 
             <KeyTakeaways
                 items={[
