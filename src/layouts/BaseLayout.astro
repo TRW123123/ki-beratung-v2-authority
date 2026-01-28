@@ -1,0 +1,66 @@
+---
+interface Props {
+    title: string;
+    description: string;
+    canonical: string;
+    robots?: string;
+}
+
+const { title, description, canonical, robots = "index, follow" } = Astro.props;
+const siteName = "KI Beratung";
+
+import "../styles/global.css";
+---
+
+<!doctype html>
+<html lang="de" itemscope itemtype="https://schema.org/WebPage">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content={robots} />
+
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <link rel="canonical" href={canonical} />
+
+        <!-- Open Graph -->
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="de_DE" />
+        <meta property="og:site_name" content={siteName} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:url" content={canonical} />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <a href="#main-content" class="skip-link">Zum Inhalt springen</a>
+
+        <slot />
+
+        <footer
+            class="site-footer"
+            itemscope
+            itemtype="https://schema.org/Organization"
+        >
+            <div class="container">
+                <div class="footer-content">
+                    <p itemprop="name">{siteName}</p>
+                    <p>
+                        <a
+                            href="mailto:kontakt@deine-domain.tld"
+                            itemprop="email">kontakt@deine-domain.tld</a
+                        >
+                    </p>
+                    <meta itemprop="url" content="https://deine-domain.tld" />
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

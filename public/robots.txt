@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://deine-domain.tld/sitemap-index.xml
