@@ -10,7 +10,7 @@ const title =
     "KI im Unternehmen: Analyse, Nutzen, Grenzen und Risiken (Leitfaden)";
 const description =
     "Fundierte Einordnung für den Mittelstand: Was leistet KI operativ wirklich? Wo liegen die Grenzen der Wirtschaftlichkeit? Analyse für Entscheider.";
-const canonical = "https://deine-domain.tld/ki-im-unternehmen";
+const canonical = new URL(Astro.url.pathname, Astro.site);
 
 const tocItems = [
     { id: "definition", label: "Definition & Einordnung" },

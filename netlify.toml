@@ -29,8 +29,4 @@
     Cache-Control = "public, max-age=0, must-revalidate"
 
 # Redirects
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-  force = false  # Do NOT override physical files
+

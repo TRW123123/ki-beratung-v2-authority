@@ -4,7 +4,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 const title = "Datenschutzerklärung";
 const description =
     "Informationen zur Verarbeitung Ihrer personenbezogenen Daten.";
-const canonical = "https://ki-beratung-v2-authority.netlify.app/datenschutz";
+const canonical = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <BaseLayout title={title} description={description} canonical={canonical}>
@@ -27,7 +27,8 @@ const canonical = "https://ki-beratung-v2-authority.netlify.app/datenschutz";
             <p>
                 <strong
                     >Wer ist verantwortlich für die Datenerfassung auf dieser
-                    Website?</strong>
+                    Website?</strong
+                >
             </p>
             <p>
                 Die Datenverarbeitung auf dieser Website erfolgt durch den

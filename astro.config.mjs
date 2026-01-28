@@ -3,7 +3,7 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://ki-beratung-v2-authority.netlify.app',
+  site: 'https://st-automatisierung.de',
   trailingSlash: 'never',
 
   build: {
